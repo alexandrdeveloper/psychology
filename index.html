@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<!-- <base href="/"> -->
 
-	<title>OptimizedHTML 4</title>
+	<title>Психология базовых потребностей</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,7 +29,7 @@
 <body>
 
 	<div class="wrapper">
-		<header>
+		<header >
 			<div class="navbar">
 				<div class="container">
 					<div class="navbar-row">
@@ -63,12 +63,12 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-8">
-							<div class="hero-content">
+							<div class="hero-content" >
 								<h1>Психология базовых
 									потребностей</h1>
 								<p>Авторский курс, посвященный изучению
 									истинных причин поведения человека</p>
-								<ul class="hero-list">
+								<ul class="hero-list" id="invite">
 									<li class="hero-list__item">
 										<img src="img/icons/hero/warranty.png" alt="warranty">
 										<span>Гарантированная поддержка</span>
@@ -96,24 +96,24 @@
 			</section>
 			<!-- /.hero -->
 		</header>
-		<section class="invite">
+		<section class="invite" >
 			<div class="container">
 				<div class="row invite-row">
 					<div class="col-md-5">
-						<form action="#" class="invite-form">
+						<form action="#" class="invite-form" >
 							<input type="text" placeholder="Ваше Имя">
-							<input type="text" placeholder="Ваш Телефон">
+							<input type="text" placeholder="Ваш Телефон" class="telMask">
 							<input type="text" placeholder="Ваш Email">
 							<div class="invite-cost">
 								<span class="invite-cost__title">Стоимость обучения</span> <!-- /.invite-cost__title -->
 								<span class="invite-cost__value">6.500 рублей</span> <!-- /.invite-cost__value -->
 							</div>
 							<!-- /.invite-cost -->
-							<button class="theme-btn" type="submit">Пройти обучение</button>
+							<button class="theme-btn" type="submit" >Пройти обучение</button>
 						</form>
 						<!-- /.invite-form -->
 						<span class="invite-offer">
-							Нажимая на кнопку выше, вы соглашаетесь с условиями <a href="#">оферты</a>	
+							Нажимая на кнопку выше, вы соглашаетесь с условиями <a href="#" data-toggle="modal" data-target="#offerModal">оферты</a>	
 						</span>
 						<!-- /.invite-offer -->
 					</div>
@@ -452,7 +452,7 @@
 						</ul>
 						<!-- /.spheres-list -->
 						<div class="spheres-btn">
-							<a href="#" class="theme-btn">Записаться на курс</a>
+							<a href="#invite" class="theme-btn softScroll">Записаться на курс</a>
 						</div>
 						<!-- /.spheres-btn -->
 					</div>
@@ -584,9 +584,14 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-7">
+						
+						<!-- /.author-image -->
 						<div class="author-text">
 							<h2>Автор курса</h2>
 							<span class="author-subtitle">Мария Ледда</span> <!-- /.author-subtitle -->
+							<div class="author-image sm-only">
+								<img src="img/author/photo.jpg" alt="author">
+							</div>
 							<ul class="author-list">
 								<li class="author-list__item">аналитический психолог,</li>					
 								<!-- /.author-list__item -->
@@ -624,7 +629,7 @@
 					</div>
 					<!-- /.col-md-7 -->
 					<div class="col-md-5">
-						<div class="author-image">
+						<div class="author-image sm-hidden">
 							<img src="img/author/photo.jpg" alt="author">
 						</div>
 						<!-- /.author-image -->
@@ -655,18 +660,18 @@
 					<div class="col-md-5">
 						<form action="#" class="invite-form invite-form_op">
 							<input type="text" placeholder="Ваше Имя">
-							<input type="text" placeholder="Ваш Телефон">
+							<input type="text" placeholder="Ваш Телефон" class="telMask">
 							<input type="text" placeholder="Ваш Email">
 							<div class="invite-cost">
 								<span class="invite-cost__title">Стоимость обучения</span> <!-- /.invite-cost__title -->
 								<span class="invite-cost__value">6.500 рублей</span> <!-- /.invite-cost__value -->
 							</div>
 							<!-- /.invite-cost -->
-							<button class="theme-btn" type="submit">Пройти обучение</button>
+							<button class="theme-btn" type="submit" >Пройти обучение</button>
 						</form>
 						<!-- /.invite-form -->
 						<span class="invite-offer">
-							Нажимая на кнопку выше, вы соглашаетесь с условиями <a href="#">оферты</a>	
+							Нажимая на кнопку выше, вы соглашаетесь с условиями <a href="#" data-toggle="modal" data-target="#offerModal">оферты</a>	
 						</span>
 						<!-- /.invite-offer -->
 					</div>
@@ -842,6 +847,26 @@
 		</footer>
 	</div>
 	<!-- /.wrapper -->
+
+	<div class="modal fade" id="offerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<div class="modal-body">
+			  ...
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			  
+			</div>
+		  </div>
+		</div>
+	  </div>
 
 	<script src="js/scripts.min.js"></script>
 
